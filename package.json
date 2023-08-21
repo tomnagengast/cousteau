@@ -21,6 +21,7 @@
     "@iconify-json/tabler": "^1.1.83",
     "@playwright/test": "^1.36.1",
     "@skeletonlabs/skeleton": "^1.10.0",
+    "@sveltejs/adapter-netlify": "^1.0.0-next.88",
     "@sveltejs/adapter-vercel": "^3.0.2",
     "@sveltejs/kit": "^1.22.3",
     "@sveltejs/vite-plugin-svelte": "^2.4.3",
