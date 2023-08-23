@@ -2,6 +2,7 @@ import { sql } from 'drizzle-orm';
 import { integer, sqliteTable, text } from 'drizzle-orm/sqlite-core';
 import { createInsertSchema, createSelectSchema } from 'drizzle-zod';
 
+// Users
 export const user = sqliteTable('user', {
   id: text('id').primaryKey(),
   createdAt: integer('created_at', { mode: 'timestamp' }).default(sql`(strftime('%s', 'now'))`),
@@ -14,6 +15,7 @@ export const user = sqliteTable('user', {
 export const insertUserSchema = createInsertSchema(user);
 export const selectUserSchema = createSelectSchema(user);
 
+// User Keys
 export const userKey = sqliteTable('user_key', {
   id: text('id').primaryKey(),
   createdAt: integer('created_at', { mode: 'timestamp' }).default(sql`(strftime('%s', 'now'))`),
@@ -26,6 +28,7 @@ export const userKey = sqliteTable('user_key', {
 export const insertUserKeySchema = createInsertSchema(userKey);
 export const selectUserKeySchema = createSelectSchema(userKey);
 
+// User Sessions
 export const userSession = sqliteTable('user_session', {
   id: text('id').primaryKey(),
   createdAt: integer('created_at', { mode: 'timestamp' }).default(sql`(strftime('%s', 'now'))`),
@@ -38,3 +41,14 @@ export const userSession = sqliteTable('user_session', {
 });
 export const insertUserSessionSchema = createInsertSchema(userSession);
 export const selectUserSessionSchema = createSelectSchema(userSession);
+
+// Plans
+export const plan = sqliteTable('plan', {
+  id: text('id').primaryKey(),
+  createdAt: integer('created_at', { mode: 'timestamp' }).default(sql`(strftime('%s', 'now'))`),
+  updateAt: integer('updated_at', { mode: 'timestamp' }).default(sql`(strftime('%s', 'now'))`),
+  name: text('name').notNull(),
+  description: text('description')
+});
+export const insertPlanSchema = createInsertSchema(plan);
+export const selectPlanSchema = createSelectSchema(plan);

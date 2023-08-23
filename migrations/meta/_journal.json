@@ -8,6 +8,13 @@
       "when": 1690867142688,
       "tag": "0000_clear_sauron",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1692637660417,
+      "tag": "0001_free_human_fly",
+      "breakpoints": true
     }
   ]
 }

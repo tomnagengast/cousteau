@@ -2,7 +2,7 @@
   export let data;
 </script>
 
-<h1>Welcome to SvelteKit Turso DrizzleORM Starter</h1>
+<h1>Welcome to Cousteau</h1>
 
 {#if data.username}
   <p>Logged in as {data.username}</p>

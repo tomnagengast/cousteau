@@ -47,7 +47,7 @@
 <AppShell>
   <svelte:fragment slot="header">
     <AppBar gridColumns="grid-cols-3" slotDefault="place-self-center" slotTrail="place-content-end">
-      <svelte:fragment slot="lead">SvelteKit Turso Drizzle Starter</svelte:fragment>
+      <svelte:fragment slot="lead">Cousteau</svelte:fragment>
       <svelte:fragment slot="trail">
         <button type="button" class="btn-icon variant-filled" on:click={drawerOpen}
           ><IconMenu /></button
